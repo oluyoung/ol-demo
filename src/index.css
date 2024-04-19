@@ -7,9 +7,57 @@ body {
 #popup-content {
   font-family: sans-serif;
   padding: 8px;
+  border-radius: 10px;
 }
 
 .ol-content {
   margin: 0;
   margin-bottom: 8px;
+}
+
+.ol-popup-closer {
+  display: none;
+}
+
+.layer-group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.layer-view {
+  margin-bottom: 1em;
+}
+
+.layer-input {
+  margin-right: 12px;
+}
+
+.drawer-fab {
+  position: absolute;
+  bottom: .5em;
+  left: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 24px;
+  transition: left ease-in-out .3s;
+  border-width: 1px;
+}
+
+.drawer-fab:hover,
+.drawer-fab:focus {
+  background-color: #d0d0d0;
+}
+
+.drawer-fab.open {
+  left: 9.5em;
+  z-index: 102;
 }
