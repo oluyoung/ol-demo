@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import Point from "ol/geom/Point.js";
 import Map from "ol/Map";
 import View from "ol/View";
 import { OGCMapTile } from "ol/source.js";
